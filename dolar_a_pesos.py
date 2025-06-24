@@ -33,5 +33,5 @@ plt.show()
 # 6. Prueba del modelo
 print("🔍 Probando el modelo con una predicción...")
 usd_prueba = 70  # cambiá este valor para probar con otros montos
-resultado = modelo.predict([usd_prueba])
+resultado = modelo.predict(np.array([usd_prueba], dtype=float))
 print(f"{usd_prueba} USD ≈ {resultado[0][0]:.2f} ARS (según modelo)")
